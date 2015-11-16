@@ -1,0 +1,8 @@
+#KB Clauses
+-P -Q R S
+-A -R
+A
+
+P
+Q
+-S

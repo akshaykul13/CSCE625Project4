@@ -1,0 +1,58 @@
+#KB Clauses
+
+# Wrong Labels
+-L1W -C1W
+-L1Y -C1Y
+-L1B -C1B
+-L2W -C2W
+-L2Y -C2Y
+-L2B -C2B
+-L2W -C2W
+-L2Y -C2Y
+-L2B -C2B
+
+# Contains one of the possibility
+C1B C1W C1Y
+C2B C2W C2Y
+C3B C3W C3Y
+
+# Contains only one of the possibility C1B -> -C1W and -C1Y
+-C1B -C1W
+-C1B -C1Y
+-C1W -C1Y
+-C2B -C2W
+-C2B -C2Y
+-C2W -C2Y
+-C3B -C3W
+-C3B -C3Y
+-C3W -C3Y
+
+# Different Colors
+-C1W -C2W
+-C1W -C3W
+-C1Y -C2Y
+-C1Y -C3Y
+-C1B -C2B
+-C1B -C3B
+-C2W -C3W
+-C2Y -C3Y
+-C2B -C3B
+
+# Observations
+-O1Y C1Y C1B
+-O1W C1W C1B
+-O2Y C2Y C2B
+-O2W C2W C2B
+-O3Y C3Y C3B
+-O3W C3W C3B 
+
+# Facts
+L1W
+L2Y
+L3B
+O1Y
+O2W
+O3Y
+
+# Query
+-C2W
